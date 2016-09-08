@@ -25,11 +25,11 @@ The script takes the following steps:
   2. Each observation forms a row: each row in the data set represents the mean measurements for one subject and activity.
   3. Each type of observational unit forms a table: the table contains only one type 	of observational unit, i.e. data collected on a subject performing an activity while using the wearable technology.
 
-7. Output the tidy dataset to csv. 
+7. Output the tidy dataset to txt. 
 
-To read the csv file back into a dataframe, download the csv and use the following R code:
+To read the csv file back into a dataframe, use the following R code:
 
-`read.csv(“tidy_data.csv”, header = TRUE, stringsAsFactors = FALSE)`
+`read.table(“tidy_data.txt”, header = TRUE, stringsAsFactors = FALSE)`
 
 The script also uses the rm() command to remove excess variables and dataframes.
 
