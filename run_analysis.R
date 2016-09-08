@@ -73,4 +73,4 @@ rm(group_data)
 tidy_data <- spread(tidy_data, variable, m)
 
 ##write the new dataset to a file
-write.csv(tidy_data, file = "tidy_data.csv")
+write.table(tidy_data, file = "tidy_data.txt", row.name = FALSE)
